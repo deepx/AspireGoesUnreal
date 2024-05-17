@@ -13,7 +13,7 @@ float UAspireGoesUnrealBPLibrary::AspireGoesUnrealSampleFunction(float Param)
 	return -1;
 }
 
-TMap<FString, FString> UAspireGoesUnrealBPLibrary::GetAspireServices(bool useHttps = true)
+TMap<FString, FString> UAspireGoesUnrealBPLibrary::GetAspireServices(bool useHttps)
 {
 	TMap<FString, FString> environmentVariables;
 	environmentVariables.Empty();
@@ -41,8 +41,10 @@ TMap<FString, FString> UAspireGoesUnrealBPLibrary::GetAspireServices(bool useHtt
 			}
 			else if(!useHttps && temp.Contains("__http__"))
 			{
+				key.Empty();
+				key = temp.Replace(TEXT("__http_"), TEXT(""), ESearchCase::IgnoreCase);
 				FString value = envVar.Right(envVar.Len() - position - 1);
-				environmentVariables.Add(temp, value);
+				environmentVariables.Add(key, value);
 			}
 		}
 	}
