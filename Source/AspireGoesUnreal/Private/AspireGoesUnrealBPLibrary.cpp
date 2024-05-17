@@ -8,11 +8,6 @@ UAspireGoesUnrealBPLibrary::UAspireGoesUnrealBPLibrary(const FObjectInitializer&
 
 }
 
-float UAspireGoesUnrealBPLibrary::AspireGoesUnrealSampleFunction(float Param)
-{
-	return -1;
-}
-
 TMap<FString, FString> UAspireGoesUnrealBPLibrary::GetAspireServices(bool useHttps)
 {
 	TMap<FString, FString> environmentVariables;

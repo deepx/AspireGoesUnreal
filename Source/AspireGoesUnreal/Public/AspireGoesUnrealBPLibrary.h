@@ -25,11 +25,6 @@ class UAspireGoesUnrealBPLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_UCLASS_BODY()
 
-	// This is the default Samplefunction
-	UFUNCTION(BlueprintCallable, meta = (DisplayName = "Execute Sample function", Keywords = "AspireGoesUnreal sample test testing"), Category = "AspireGoesUnreal|Testing")
-	static float AspireGoesUnrealSampleFunction(float Param);
-
-
 	// Get the Services Aspire provides us
 	UFUNCTION(BlueprintCallable, meta = (DisplayName = "Get Aspire Services", KeyWords = "AspireGoesUnreal Services"), Category = "AspireGoesUnreal|Services")
 	static TMap<FString, FString> GetAspireServices(bool useHttps);
