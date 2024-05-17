@@ -14,7 +14,6 @@ TMap<FString, FString> UAspireGoesUnrealBPLibrary::GetAspireServices(bool useHtt
 	environmentVariables.Empty();
 	for (char ** current = environ; *current; current++)
 	{
-		
 		FString envVar(*current);
 		FString key;
 		key.Empty();
@@ -44,5 +43,30 @@ TMap<FString, FString> UAspireGoesUnrealBPLibrary::GetAspireServices(bool useHtt
 		}
 	}
 	return environmentVariables;
+}
+
+TMap<FString, FString> UAspireGoesUnrealBPLibrary::GetAspireConnectionstrings()
+{
+	TMap<FString, FString> connectionStrings;
+	connectionStrings.Empty();
+
+	for (char** current = environ; *current; current++)
+	{
+		FString envVar(*current);
+		FString key;
+		FString temp;
+		key.Empty();
+		temp.Empty();
+		int32 position = envVar.Find("=");
+		temp = envVar.Left(position);
+		if (temp.Contains("ConnectionStrings__"))
+		{
+			key = temp.Replace(TEXT("ConnectionStrings__"), TEXT(""), ESearchCase::IgnoreCase);
+			FString value = envVar.Right(envVar.Len() - position - 1);
+			connectionStrings.Add(key, value);
+		}
+	}
+
+	return connectionStrings;
 }
 

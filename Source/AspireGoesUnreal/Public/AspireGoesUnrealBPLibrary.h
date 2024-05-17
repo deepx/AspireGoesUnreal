@@ -29,6 +29,8 @@ class UAspireGoesUnrealBPLibrary : public UBlueprintFunctionLibrary
 	UFUNCTION(BlueprintCallable, meta = (DisplayName = "Get Aspire Services", KeyWords = "AspireGoesUnreal Services"), Category = "AspireGoesUnreal|Services")
 	static TMap<FString, FString> GetAspireServices(bool useHttps);
 
-
+	// Get the Connection-Strings from Aspire-Apphost
+	UFUNCTION(BlueprintCallable, meta = (DisplayName = "Get Aspire Connectionstrings", KeyWords = "AspireGoesUnreal Connectionstrings"), Category = "AspireGoesUnreal|Connectionstrings")
+	static TMap<FString, FString> GetAspireConnectionstrings();
 
 };
