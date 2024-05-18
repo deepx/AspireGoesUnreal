@@ -3,6 +3,30 @@
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "AspireGoesUnrealBPLibrary.generated.h"
 
+USTRUCT(BlueprintType)
+struct FWeatherForecast
+{
+	GENERATED_USTRUCT_BODY()
+
+public:
+
+	UPROPERTY(BlueprintReadWrite)
+	FDateTime Date;
+
+	UPROPERTY(BlueprintReadWrite)
+	int32 TemperatureC;
+
+	UPROPERTY(BlueprintReadWrite)
+	int32 TemperatureF;
+
+	UPROPERTY(BlueprintReadWrite)
+	FString Summary;
+
+};
+
+
+
+
 /* 
 *	Function library class.
 *	Each function in it is expected to be static and represents blueprint node that can be called in any blueprint.
@@ -30,7 +54,7 @@ class UAspireGoesUnrealBPLibrary : public UBlueprintFunctionLibrary
 	static TMap<FString, FString> GetAspireServices(bool useHttps);
 
 	// Get the Connection-Strings from Aspire-Apphost
-	UFUNCTION(BlueprintCallable, meta = (DisplayName = "Get Aspire Connectionstrings", KeyWords = "AspireGoesUnreal Connectionstrings"), Category = "AspireGoesUnreal|Connectionstrings")
-	static TMap<FString, FString> GetAspireConnectionstrings();
+	UFUNCTION(BlueprintCallable, meta = (DisplayName = "Get Aspire ConnectionStrings", KeyWords = "AspireGoesUnreal Connectionstrings"), Category = "AspireGoesUnreal|Connectionstrings")
+	static TMap<FString, FString> GetAspireConnectionStrings();
 
 };

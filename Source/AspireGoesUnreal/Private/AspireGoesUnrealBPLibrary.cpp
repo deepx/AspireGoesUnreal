@@ -45,7 +45,7 @@ TMap<FString, FString> UAspireGoesUnrealBPLibrary::GetAspireServices(bool useHtt
 	return environmentVariables;
 }
 
-TMap<FString, FString> UAspireGoesUnrealBPLibrary::GetAspireConnectionstrings()
+TMap<FString, FString> UAspireGoesUnrealBPLibrary::GetAspireConnectionStrings()
 {
 	TMap<FString, FString> connectionStrings;
 	connectionStrings.Empty();
