@@ -3,6 +3,8 @@
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "AspireGoesUnrealBPLibrary.generated.h"
 
+DECLARE_LOG_CATEGORY_EXTERN(LogAspireGoesUnreal, Log, All);
+
 USTRUCT(BlueprintType)
 struct FWeatherForecast
 {
@@ -14,10 +16,10 @@ public:
 	FDateTime Date;
 
 	UPROPERTY(BlueprintReadWrite)
-	int32 TemperatureC;
+	int32 TemperatureC = 0;
 
 	UPROPERTY(BlueprintReadWrite)
-	int32 TemperatureF;
+	int32 TemperatureF = 0;
 
 	UPROPERTY(BlueprintReadWrite)
 	FString Summary;

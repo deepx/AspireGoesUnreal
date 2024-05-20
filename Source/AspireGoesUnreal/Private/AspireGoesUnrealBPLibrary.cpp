@@ -1,10 +1,12 @@
 #include "AspireGoesUnrealBPLibrary.h"
 #include "AspireGoesUnreal.h"
 
+DEFINE_LOG_CATEGORY(LogAspireGoesUnreal);
+
 UAspireGoesUnrealBPLibrary::UAspireGoesUnrealBPLibrary(const FObjectInitializer& ObjectInitializer)
 : Super(ObjectInitializer)
 {
-	UE_LOG(LogTemp, Warning, TEXT("AspireGoesUnreal loaded."));
+	UE_LOG(LogAspireGoesUnreal, Warning, TEXT("AspireGoesUnreal loaded."));
 
 }
 
