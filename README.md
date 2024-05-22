@@ -33,18 +33,6 @@ If you encounter any issues or have any questions, please open an issue on this 
 
 This project is licensed under the MIT License. See the `LICENSE` file in the project root for more information.
 
-## Contributing
-
-We welcome contributions from the community. If you wish to contribute:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Commit your changes to this branch.
-4. Push your changes to your fork.
-5. Submit a pull request from your fork to our repository.
-
-Please make sure to update tests as appropriate and follow the coding style of the project.
-
 #### Todo:
 - [X] Get Aspire-Services
 - [X] Get ConnectionStrings
