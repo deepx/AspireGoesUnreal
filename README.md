@@ -4,8 +4,9 @@
 
 **AspireGoesUnreal** is a powerful tool that allows the Unrealengine to leverage the capabilities of the .NET Aspire framework. This plugin is designed to provide a seamless integration between Unreal Engine and .NET Aspire, enabling developers to create more complex and robust games and applications.
 
-[!NOTE]
-Actual this Plugin is tested on Windows 11 with UnrealEngine 5.4 and .NET Aspire `8.0.0-preview.7.24251.11`what is the actual one at this time. 
+> [!NOTE]
+> Actual this Plugin is tested on Windows 11 with UnrealEngine `5.4` and .NET Aspire `8.0.1` or higher.
+It should work with all Unrealengine 5 Versions. Please let me know.
 
 ## Features
 
@@ -23,7 +24,8 @@ Actual this Plugin is tested on Windows 11 with UnrealEngine 5.4 and .NET Aspire
 
 ## Usage
 
-After installing the plugin, you can access .NET Aspire functionalities from your Unreal Engine project. Video-Tutorial in work.
+After installing the plugin, you can access .NET Aspire functionalities from your Unreal Engine project. 
+[![Video Title](https://img.youtube.com/vi/u43sRzUpY8Y/0.jpg)](https://www.youtube.com/watch?v=u43sRzUpY8Y)
 
 ## Support
 
@@ -38,7 +40,7 @@ This project is licensed under the MIT License. See the `LICENSE` file in the pr
 - [X] Get ConnectionStrings
 - [ ] Add Opentelemetry-Exporter
 - [ ] Add support for Websockets
-- [ ] Add logging to Aspire
+- [X] Add logging to Aspire
 - [ ] Make it usable to Windows, Linux and Mac
 
 ## Acknowledgements
@@ -47,5 +49,6 @@ We would like to thank:
 
 - The Unreal Engine team for creating such a powerful game engine.
 - The .NET Aspire team for their great framework.
+- [Aspireify.net](https://aspireify.net/a/240517/aspire-goes-unreal) (@csharpfritz) for publishing
 - All contributors who have helped to improve this plugin.
 
