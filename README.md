@@ -33,6 +33,11 @@ var unrealGame = builder.AddExecutable("UnrealGame", unrealEditor, workingDirect
 ## Usage
 
 After installing the plugin, you can access .NET Aspire functionalities from your Unrealengine-Project.
+In Blueprints you find these additional Nodes: 
+
+![image](https://github.com/user-attachments/assets/a4c81c49-90cc-457b-ab6f-a5314e0be2b8)
+
+
 Klick on the Screenshot below to open the Video on Youtube.
 
 [![Video Title](https://img.youtube.com/vi/u43sRzUpY8Y/0.jpg)](https://www.youtube.com/watch?v=u43sRzUpY8Y)
@@ -48,7 +53,8 @@ This project is licensed under the MIT License. See the `LICENSE` file in the pr
 #### Todo:
 - [X] Get Aspire-Services
 - [X] Get ConnectionStrings
-- [ ] Add Opentelemetry-Exporter
+- [ ] Add Opentelemetry-Exporter![Screenshot 2024-07-18 190107](https://github.com/user-attachments/assets/63a4839f-86e2-48bd-9b27-63fd0a3e4c8d)
+
 - [ ] Add support for Websockets
 - [X] Add logging to Aspire
 - [ ] Make it usable to Windows, Linux and Mac
