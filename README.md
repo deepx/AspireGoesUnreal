@@ -13,6 +13,7 @@ It should work with all Unrealengine 5 Versions. Please let me know.
 - Seamless integration with Unreal Engine.
 - Access to all(in work) the functionalities of .NET Aspire.
 - Easy to use and integrate into your existing Unreal Engine project.
+- Works with the UnrealEditor or with a dedicated Server
 
 ## Installation
 
@@ -20,11 +21,20 @@ It should work with all Unrealengine 5 Versions. Please let me know.
    - Or clone the the Repository direcly into your `Plugins` folder.
 2. Extract the downloaded file into the `Plugins` folder of your Unreal Engine project.
 3. Restart your Unreal Engine editor. The plugin should now be available in the `Plugins` window under the `Installed` section.
+4. Add the following Lines to the AppHost of your Aspire-Project to include the Unrealengine-Editor
 
+```
+var unrealEditor = @"Path to your UnrealEditor.exe";  // With Filename
+var workingDirectory = @"Directory of your UnrealEngine-Project";
+string[] parameter = [@"Path to the UPROJECT File of your Project"];  // With Filename
+var unrealGame = builder.AddExecutable("UnrealGame", unrealEditor, workingDirectory, parameter);
+```
 
 ## Usage
 
-After installing the plugin, you can access .NET Aspire functionalities from your Unreal Engine project. 
+After installing the plugin, you can access .NET Aspire functionalities from your Unrealengine-Project.
+Klick on the Screenshot below to open the Video on Youtube.
+
 [![Video Title](https://img.youtube.com/vi/u43sRzUpY8Y/0.jpg)](https://www.youtube.com/watch?v=u43sRzUpY8Y)
 
 ## Support
@@ -49,6 +59,6 @@ We would like to thank:
 
 - The Unreal Engine team for creating such a powerful game engine.
 - The .NET Aspire team for their great framework.
-- [Aspireify.net](https://aspireify.net/a/240517/aspire-goes-unreal) (@csharpfritz) for publishing
+- [Aspireify.net](https://aspireify.net/a/240517/aspire-goes-unreal) ( @csharpfritz ) for publishing
 - All contributors who have helped to improve this plugin.
 
