@@ -1,6 +1,7 @@
 #include "AspireGoesUnrealBPLibrary.h"
 #include "AspireGoesUnreal.h"
 
+
 DEFINE_LOG_CATEGORY(LogAspireGoesUnreal);
 
 UAspireGoesUnrealBPLibrary::UAspireGoesUnrealBPLibrary(const FObjectInitializer& ObjectInitializer)

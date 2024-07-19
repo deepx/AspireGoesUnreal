@@ -53,8 +53,7 @@ This project is licensed under the MIT License. See the `LICENSE` file in the pr
 #### Todo:
 - [X] Get Aspire-Services
 - [X] Get ConnectionStrings
-- [ ] Add Opentelemetry-Exporter![Screenshot 2024-07-18 190107](https://github.com/user-attachments/assets/63a4839f-86e2-48bd-9b27-63fd0a3e4c8d)
-
+- [ ] Add Opentelemetry-Exporter
 - [ ] Add support for Websockets
 - [X] Add logging to Aspire
 - [ ] Make it usable to Windows, Linux and Mac

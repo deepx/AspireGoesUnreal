@@ -3,7 +3,7 @@
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "AspireGoesUnrealBPLibrary.generated.h"
 
-DECLARE_LOG_CATEGORY_EXTERN(LogAspireGoesUnreal, Log, All);
+DECLARE_LOG_CATEGORY_EXTERN(LogAspireGoesUnreal, Verbose, All);
 
 USTRUCT(BlueprintType)
 struct FWeatherForecast
